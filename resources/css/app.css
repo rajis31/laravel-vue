@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+$color-brand: darkgrey;
+$font-size: 1em;
+body {
+ color: $color-brand;
+ font-size: $font-size;
+}

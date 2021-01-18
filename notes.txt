@@ -1,0 +1,21 @@
+====== DB Migrations ======
+- php artisan make:migration create_users_table --create=users 
+- php artisan migrate 
+- php artisan migrate:rollback --step=[n steps]
+- php artisan make:model [model-name] -mrc  # This will create model, migration, controller all in one named after model-name 
+- php artisan make:model [model-name] -a # This will do the same thing as -mrc
+
+==== DB Seeders ====
+1. Lets you seed your db with test data 
+2. php artisan make:seeder [seeder name]  # Generate a seeder 
+3. Seeders are stored in database/seeds
+4. php artisan db:seed  # Run the default DatabseSeeder
+        OR
+5. php artisan db:seed --class=UserSeeder # Run specific seeder 
+
+===== Setting up Laravel & Vue ======
+1. composer require laravel/ui:^2.4  # For Laravel 7 
+2. php artisan ui vue
+3. npm install 
+4. php artisan serve # Startup php server 
+5. npm run watch # tracks any changes to Vue frontend files 
